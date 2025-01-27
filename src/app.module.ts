@@ -12,9 +12,7 @@ import { ConfigModule } from '@nestjs/config';
       envFilePath: '.env',
       isGlobal: true,
     }),
-    MongooseModule.forRoot('mongodb+srv://oppong_coffie:oppong_coffie@cluster0.u2xy7.mongodb.net/', {
-      dbName: 'tuaneka',
-    }),
+    MongooseModule.forRoot('mongodb+srv://oppong_coffie:oppong_coffie@cluster0.u2xy7.mongodb.net/tuaneka'),
     
     MessagingModule,
     ItemModule,
