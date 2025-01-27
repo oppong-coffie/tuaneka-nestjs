@@ -24,7 +24,7 @@ export class ItemService {
     }
   }
 
-// Send data to database (Create new item)
+// START::Send data to database (Create new item)
 async sendItem(newItem: Item): Promise<Item> {
   try {
     const createdItem = new this.itemModel(newItem); // Create a new instance using the data
@@ -36,6 +36,8 @@ async sendItem(newItem: Item): Promise<Item> {
     throw error;
   }
 }
+// END::Send data to database (Create new item)
+
 
 
 }
