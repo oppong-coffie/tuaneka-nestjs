@@ -13,7 +13,7 @@ import { ConfigModule } from '@nestjs/config';
       isGlobal: true,
     }),
     //connect to mongodb
-    MongooseModule.forRoot('mongodb+srv://oppong_coffie:oppong_coffie@cluster0.u2xy7.mongodb.net/tuaneka'),
+    MongooseModule.forRoot(process.env.MONGO_UI),
     
     MessagingModule,
     ItemModule,
