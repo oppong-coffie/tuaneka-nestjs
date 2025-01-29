@@ -6,9 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "start": "node --max-old-space-size=4096 index.js nest start",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest start",
     "start:memory": "node --max-old-space-size=8192 dist/main",
     "start:prod": "node --max-old-space-size=8192 dist/main.js",
     "start:dev": "nest start --watch",
